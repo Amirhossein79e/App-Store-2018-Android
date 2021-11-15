@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/dp8"
+    android:paddingEnd="@dimen/dp8">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeTxt"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_alignParentStart="true"
+        style="@style/TextViewStyle">
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp8"
+        android:id="@+id/homeCard"
+        android:layout_below="@id/homeTxt"
+        android:backgroundTint="@color/md_grey_100"
+        app:cardElevation="@dimen/dp0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_recycler"
+                android:layout_centerInParent="true"
+                android:paddingStart="@dimen/dp4"
+                android:paddingEnd="@dimen/dp4">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

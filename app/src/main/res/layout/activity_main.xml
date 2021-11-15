@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_grey_50">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/transparent"
+        app:elevation="@dimen/dp0">
+
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@color/transparent"
+            android:elevation="@dimen/dp0"
+            android:fitsSystemWindows="true">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                android:elevation="@dimen/dp0"
+                android:background="@color/transparent"
+                app:contentInsetEnd="@dimen/dp0"
+                app:contentInsetStart="@dimen/dp0">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="@dimen/dp0"
+                    app:cardCornerRadius="@dimen/dp8"
+                    android:id="@+id/search_card"
+                    android:background="@color/md_white_1000"
+                    android:layout_marginStart="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.appcompat.widget.SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/search_view"
+                            android:background="@color/md_white_1000"
+                            android:elevation="@dimen/dp0"
+                            android:backgroundTint="@color/md_white_1000"
+                            app:queryBackground="@color/md_white_1000"
+                            app:defaultQueryHint="@string/search"
+                            app:searchIcon="@drawable/ic_search"
+                            android:layout_toLeftOf="@id/btn_voice">
+                        </androidx.appcompat.widget.SearchView>
+
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:layout_width="@dimen/dp32"
+                            android:layout_height="@dimen/dp32"
+                            android:src="@drawable/ic_mic"
+                            android:background="@color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/btn_voice">
+                        </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:fillViewport="true">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame">
+        </FrameLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        android:id="@+id/bottom_app_bar"
+        app:contentInsetStart="@dimen/dp8"
+        app:contentInsetEnd="@dimen/dp8"
+        app:elevation="@dimen/dp0"
+        app:fabCradleMargin="@dimen/dp4"
+        android:backgroundTint="@color/md_light_blue_300">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/bottom_menu"
+            android:id="@+id/bottom_nav"
+            android:background="@color/transparent"
+            app:elevation="@dimen/dp0"
+            app:itemIconTint="@color/md_white_1000"
+            app:itemTextColor="@color/md_white_1000">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="center"
+        android:src="@drawable/ic_home"
+        android:backgroundTint="@color/md_light_blue_300"
+        app:elevation="@dimen/dp0"
+        app:tint="@color/md_white_1000">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

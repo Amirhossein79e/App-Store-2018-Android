@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.AppCategoryFragment"
+    android:background="@color/md_grey_50"
+    android:layout_marginBottom="@dimen/dp64">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/md_white_1000"
+        android:elevation="@dimen/dp0"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dp8">
+
+        <ProgressBar
+            android:id="@+id/app_category_progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp64"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:visibility="gone">
+        </ProgressBar>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_category_recycler"
+            android:paddingStart="@dimen/dp8"
+            android:paddingEnd="@dimen/dp8">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:layout_centerInParent="true"
+            android:id="@+id/txt_no_app"
+            android:text="@string/noApp"
+            android:visibility="gone">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

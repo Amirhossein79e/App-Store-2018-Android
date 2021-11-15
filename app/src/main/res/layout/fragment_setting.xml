@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SettingFragment"
+    android:background="@color/md_grey_50">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp8"
+        android:background="@color/md_white_1000"
+        android:visibility="visible"
+        android:layout_gravity="center">
+
+
+        <ProgressBar
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp64"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:id="@+id/setting_progress"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ProgressBar">
+        </ProgressBar>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp64"
+        android:id="@+id/setting_snack">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp8"
+        android:layout_margin="@dimen/dp8"
+        android:backgroundTint="@color/md_white_1000"
+        app:cardElevation="@dimen/dp0"
+        android:id="@+id/card_login">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/loginForm"
+               android:layout_gravity="start"
+               android:layout_margin="@dimen/dp4">
+           </androidx.appcompat.widget.AppCompatTextView>
+
+
+           <androidx.appcompat.widget.AppCompatEditText
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp48"
+               android:background="@drawable/edt_shape"
+               android:layout_marginBottom="@dimen/dp8"
+               android:layout_marginTop="@dimen/dp16"
+               android:layout_marginStart="@dimen/dp24"
+               android:layout_marginEnd="@dimen/dp24"
+               android:hint="@string/email"
+               android:padding="@dimen/dp8"
+               android:id="@+id/email_login"
+               android:drawableEnd="@drawable/ic_email"
+               android:drawablePadding="@dimen/dp4">
+           </androidx.appcompat.widget.AppCompatEditText>
+
+
+           <androidx.appcompat.widget.AppCompatEditText
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp48"
+               android:background="@drawable/edt_shape"
+               android:layout_marginTop="@dimen/dp8"
+               android:layout_marginStart="@dimen/dp24"
+               android:layout_marginEnd="@dimen/dp24"
+               android:padding="@dimen/dp8"
+               android:hint="@string/Password"
+               android:id="@+id/password_login"
+               android:inputType="textPassword"
+               android:drawableEnd="@drawable/ic_password"
+               android:drawablePadding="@dimen/dp4">
+           </androidx.appcompat.widget.AppCompatEditText>
+
+
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/dp24"
+               android:text="@string/Login"
+               android:background="@drawable/ripple_effect"
+               style="@style/ButtonStyle"
+               android:id="@+id/btn_login">
+           </androidx.appcompat.widget.AppCompatButton>
+
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/SignUp"
+               android:layout_gravity="bottom|center"
+               android:layout_marginBottom="@dimen/dp8"
+               android:id="@+id/txt_signUp">
+           </androidx.appcompat.widget.AppCompatTextView>
+
+
+       </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp8"
+        android:layout_margin="@dimen/dp8"
+        android:backgroundTint="@color/md_white_1000"
+        app:cardElevation="@dimen/dp0"
+        android:id="@+id/card_signUp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SignupForm"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp24"
+                android:layout_marginEnd="@dimen/dp24"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/edt_shape"
+                android:hint="@string/email"
+                android:padding="@dimen/dp8"
+                android:id="@+id/email_signUp"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawablePadding="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp24"
+                android:layout_marginEnd="@dimen/dp24"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/edt_shape"
+                android:hint="@string/Username"
+                android:padding="@dimen/dp8"
+                android:id="@+id/user_signUp"
+                android:drawableEnd="@drawable/ic_account"
+                android:drawablePadding="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp24"
+                android:layout_marginEnd="@dimen/dp24"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/edt_shape"
+                android:padding="@dimen/dp8"
+                android:hint="@string/Password"
+                android:id="@+id/password_signUp"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_password"
+                android:drawablePadding="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp24"
+                android:layout_marginEnd="@dimen/dp24"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/edt_shape"
+                android:padding="@dimen/dp8"
+                android:hint="@string/PasswordRetype"
+                android:id="@+id/password_signUp_re"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_password"
+                android:drawablePadding="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp24"
+                android:text="@string/Signup"
+                android:background="@drawable/ripple_effect"
+                style="@style/ButtonStyle"
+                android:id="@+id/btn_signUp">
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginTwo"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/dp8"
+                android:id="@+id/txt_login">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp8"
+            android:layout_margin="@dimen/dp8"
+            android:backgroundTint="@color/md_white_1000"
+            app:cardElevation="@dimen/dp0"
+            android:visibility="gone"
+            android:id="@+id/card_user">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp8"
+                android:id="@+id/txt_username"
+                android:gravity="start">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp8"
+                    android:text="@string/SignOut"
+                    android:layout_gravity="end"
+                    android:id="@+id/txt_logout">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp8"
+            android:background="@color/md_white_1000"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectLanguage"
+                style="@style/TextViewStyle"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp4">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+             <androidx.appcompat.widget.AppCompatSpinner
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/dp56"
+                 android:layout_margin="@dimen/dp8"
+                 android:id="@+id/spinner"
+                 android:entries="@array/lang">
+             </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp8"
+            android:background="@color/md_white_1000"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Developer"
+                    style="@style/TextViewStyle"
+                    android:layout_margin="@dimen/dp4">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myName"
+                    style="@style/TextViewStyle"
+                    android:layout_margin="@dimen/dp8">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp8"
+            android:background="@color/md_white_1000"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DeveloperEmail"
+                    style="@style/TextViewStyle"
+                    android:layout_margin="@dimen/dp4">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amirhossein79_e_gmail_com"
+                    style="@style/TextViewStyle"
+                    android:layout_margin="@dimen/dp8">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

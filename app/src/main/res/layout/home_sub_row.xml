@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/dp4"
+    android:paddingEnd="@dimen/dp4">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp120"
+        app:cardCornerRadius="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:backgroundTint="@color/md_white_1000"
+        app:cardElevation="@dimen/dp0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="locale"
+            android:id="@+id/sub_layout">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/home_sub_image"
+                android:layout_marginTop="@dimen/dp8">
+            </com.google.android.material.imageview.ShapeableImageView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/home_sub_text"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginBottom="@dimen/dp4"
+                style="@style/TextViewStyle"
+                android:textSize="@dimen/sp16">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

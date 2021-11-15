@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.CategoryFragment"
+    android:background="@color/md_grey_50">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp8"
+        android:elevation="@dimen/dp0"
+        android:background="@color/md_white_1000"
+        android:visibility="visible"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp64"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:id="@+id/category_progress"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ProgressBar">
+        </ProgressBar>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp64">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_category">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/md_light_blue_300</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/yekan</item>
+    </style>
+
+    <style name="myAlert" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="dialogCornerRadius">@dimen/dp8</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">@dimen/sp20</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/md_grey_700</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="fontFamily">@font/yekan</item>
+    </style>
+
+
+</resources>

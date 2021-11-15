@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Market</string>
+    <string name="open_app">ورود</string>
+    <string name="Uninstall_app">حذف</string>
+    <string name="InstallApp">نصب</string>
+    <string name="Zero">۰</string>
+    <string name="Comment">دیدگاه</string>
+    <string name="SubmitComment">تایید</string>
+    <string name="loginForm">ورود به حساب کاربری</string>
+    <string name="email">ایمیل</string>
+    <string name="Password">رمز عبور</string>
+    <string name="Login">ورود</string>
+    <string name="SignUp">ثبت نام</string>
+    <string name="SignupForm">ایجاد حساب کاربری</string>
+    <string name="Username">نام کاربری</string>
+    <string name="PasswordRetype">تکرار رمز عبور</string>
+    <string name="Signup">ثبت نام</string>
+    <string name="loginTwo">ورود به حساب کاربری</string>
+    <string name="SignOut">خروج</string>
+    <string name="category">دسته بندی</string>
+    <string name="home">خانه</string>
+    <string name="settings">تنظیمات</string>
+    <string name="search">جستجو</string>
+    <string name="selectLanguage">انتخاب زبان</string>
+    <string name="Developer">توسعه دهنده :</string>
+    <string name="myName">امیرحسین پورعمادی</string>
+    <string name="DeveloperEmail">ایمیل توسعه دهنده :</string>
+    <string name="amirhossein79_e_gmail_com">amirhossein79.e@gmail.com</string>
+    <string name="ConnectionFailed">ارتباط برقرار نشد</string>
+    <string name="SetStars">حداقل امتیاز یک می باشد</string>
+    <string name="NeedLogin">ابتدا وارد حساب کاربری شوید</string>
+    <string name="Retype">تکرار رمز عبور صحیح نمی باشد</string>
+    <string name="LoginTrue">خوش آمدید</string>
+    <string name="LoginFailed">ایمیل یا رمز عبور اشتباه است</string>
+    <string name="SignupTrue">حساب کاربری ایجاد شد</string>
+    <string name="SignupFailed">ایمیل تکراری یا نا معتبر است</string>
+    <string name="voice">جستجوی صوتی</string>
+    <string name="NetFailed">مشکل در برقراری ارتباط با سرور</string>
+    <string name="NetFailedMsg">اتصال به اینترنت را بررسی کنید</string>
+    <string name="NetSetting">تنظیمات اینترنت</string>
+    <string name="filed">لطفا همه ی فیلد ها را به صورت صحیح پر کنید</string>
+    <string name="commentSubmitted">دیدگاه شما ثبت شد</string>
+    <string name="noApp"> هیچ اپلیکیشنی در این دسته بندی نیست</string>
+    <string name="noSearch">جستجو نتیجه ای نداشت</string>
+    <string name="noComment">هیچ دیدگاهی ثبت نشده</string>
+
+    <string-array name="lang">
+        <item>انتخاب زبان</item>
+        <item>انگلیسی</item>
+        <item>فارسی</item>
+    </string-array>
+
+</resources>
